@@ -1,0 +1,148 @@
+html{
+    scroll-behavior:smooth;
+}
+nav{
+    background-color:goldenrod;
+    padding:7px;
+    display:flex;
+    justify-content:center; 
+}
+.Intro_paragraph {
+    width: 70%;             
+    margin-left: -55px auto;     
+    padding:40px;     
+    font-size:15px;
+    line-height:1.6;
+   
+    border-radius: 10px;   
+    color:silver; 
+}
+.Educational_info{
+    width:70%;
+    margin-left: -55px auto;
+    padding:40px;
+    font-size:15px;
+    color:azure;
+    line-height:1.6;
+}
+
+.achievements{
+    width:40%;
+    margin-left:60%;
+    margin-top:0%;
+    padding:30px;
+    font-size:15px;
+    color:blanchedalmond;
+    line-height:1.6;
+}
+
+.Skills{
+    width:70%;
+    margin-left: -55px auto;
+    margin-top:-5%;
+    padding:40px;
+    font-size:15px;
+    color:antiquewhite;
+    line-height:1.6;
+}
+
+.Resume{
+    width:60%;
+    margin:0 auto ;
+    margin-left:40%;
+    margin-top:-5%;
+    padding:30px;
+    font-size:15px;
+    color:beige;
+    line-height:1.6;
+}
+
+
+
+.coolestbuttonever{
+    padding:10px 20px;
+    background-color:grey;
+    color:black;
+    transition:background-color 0.4s ease,transform 0.2s ease;
+}
+
+.coolestbuttonever:hover{
+    background-color:blueviolet;
+    transform:scale(1.05);
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    max-width:100%;
+    height: auto; 
+    overflow-x: hidden;
+    background-color:black;
+    margin:0;
+    padding:0;  
+}
+
+html{
+    height: auto; 
+}
+
+body::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('starry.jpeg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    opacity: 0.4;
+    z-index: -1;
+    pointer-events:none;
+}
+
+.indore-img {
+    width: 25%;
+    max-width: 250px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 25%;
+    border: 4px outset blanchedalmond;
+    box-sizing: border-box;
+}
+
+/* Responsive handling */
+@media screen and (max-width: 768px) {
+    .indore-img {
+        width: 60%;
+    }
+}
+
+.button_tra{
+    display:block;
+    padding:0.5%;
+    margin-left:40%;
+    background-color:aqua;
+    color:black;
+    transition:background-color 0.4s ease,transform 0.2s ease;
+}
+
+.button_tra:hover{
+    background-color:blueviolet;
+    transform:scale(1.05);
+}
+
+#inputText {
+    background-color: transparent; 
+    color: silver; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid silver;
+    width: 100%; 
+    box-sizing: border-box;
+}

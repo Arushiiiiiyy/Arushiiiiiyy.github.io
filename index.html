@@ -1,0 +1,124 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My personal website</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        }
+        nav {
+        background-color: goldenrod;
+        padding: 7px;
+        display:flex;
+        }
+        nav a {
+        color: white;
+        text-decoration:solid;
+        margin-right: 75px; 
+        font-size: 18px;
+        display:inline-block;
+        }
+        nav a:hover {
+        color: #f1f1f1; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-scroll"></div>
+    <nav>
+        <a href="#Educational_info">Educational Info</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Resume">Resume</a>
+        <a href="#text-analyzer">Text-analyzer</a>
+    </nav>
+    <h1 style="text-align:center;margin-left:0%;color:burlywood;">Welcome to my site</h1>
+
+    <div class="Intro_paragraph">
+        <p>Hi! this is Arushi shukla. I am currently in 1st year ,CSE in IIIT- Hyderabad!<br>
+            I am originally from Indore. <br>I really like astronomy and reading novels
+            (Harry Potter series being my favourite). :) .<br>My hobbies include painting and chatting
+            with people....
+        </p>
+    </div>
+    <!--<div class="Intro_paragraph" style="width:70%;margin-left:-55px auto;padding:40px;">
+        <p>Hi! this is Arushi shukla. I am currently in 1st year ,CSE in IIIT- Hyderabad!<br>
+            I am originally from Indore. <br>I really like astronomy and reading novels
+            (Harry Potter series being my favourite). :) .<br>My hobbies include painting and chatting
+            with people....
+        </p>
+    </div>-->
+    <img src="arushi.jpeg" alt="Arushi Shukla" style="width:25%; margin-right:5%; 
+    float:inline-end; border-radius:25%; border-style:outset; border-width:4px; border-color: lightblue; margin-top:-150px;">
+   
+
+    <img src="indore.jpeg" alt="Krishnapura Chhattris" style="width:25%; margin-right:5%;border-radius:25%;border-style:outset;border-width:
+    4px;border-color: black;margin-top:150px;margin-left:30px;margin-top:10px;">
+
+    <div class="Educational_info" id="Educational_info">
+        <h2>Educational_Info</h2>
+        <p><strong>Ist-Xth  </strong> : Atomic Energy Central School,Indore<br>
+            <strong>High-school  </strong>:Rankers International School,Indore<br>
+            <strong>University  </strong>:International Institute of Information Technology,Hyderabad<br>
+        </p>
+    </div>
+    <!--shift paras to middle-->
+    <h2 style="margin-left:60%;color:aqua;font-family:'Georgia';margin-top:-20%">ACHIEVEMENTS</h2>
+    <div class="achievements" id="achievements">
+       
+        <ul>
+            <li>JEE-Mains AIR-3327</li>
+            <li>SAT-Score : 1470</li>
+            <li>XIIth Boards : 93.8%</li>
+            <li>I am in IIIT-Hyderabad :)</li>
+            <li>Gold medal winner in IOAA</li>
+            <li>I exist !</li>
+        </ul>
+    </div>
+
+
+    <div style="display: flex; align-items: center; justify-content: space-evenly; margin: 50px 0;">
+  
+        <!-- Left side: Educational Info -->
+        <div  class="Educational_info" style="color: white; font-size: 15px; max-width: 600px;">
+          <h2>Educational_Info</h2>
+          <p><b>Ist-Xth</b> : Atomic Energy Central School, Indore</p>
+          <p><b>High-school</b> : Rankers International School, Indore</p>
+          <p><b>University</b> : International Institute of Information Technology, Hyderabad</p>
+        </div>
+      
+        <!-- Right side: Image -->
+        <img src="Indore2.jpeg" alt="Indore" style="border-style: outset;border-width: 10px;width: 250px; height: auto; border-radius: 50px;" />
+      
+    </div>
+      
+    <div class="Skills" id="Skills">
+        <h1 style="font-family:'Lucida sans';color:blueviolet">Skills</h1>
+        <ol>
+            <li>C and C++</li>
+            <li>Python,HTML,CSS,Javascript</li>
+            <li>SQL+NoSQL</li>
+            <li>BASH</li>
+            <li>Autocad Fusion</li>
+            <li>Adobe Photoshop</li>
+            <li>Canva</li>
+            <li>And lots moreeee.......</li>
+        </ol>
+    </div>
+    <div class="Resume" id="Resume">
+        <a href="RESUME ARUSHI SHUKLA.pdf" target="_blank" class="coolestbuttonever">RESUME</a>
+    </div>
+    <script src="javascript.js"></script>
+    <script src="script.js"></script> 
+    <div id="text-analyzer" style="margin:40px;color:beige;">
+        <h2 style="font-family: Kristen ITC;margin:0%">TEXT~ANALYZER</h2>
+        <textarea id="inputText" rows="20" cols="100" placeholder="Please write your text here" style="color:silver"></textarea>
+        <button onclick="analyzeText()" class="button_tra">Analyze Text</button>
+        <div id="output"></div>
+    </div>
+</body>   
+</html>
